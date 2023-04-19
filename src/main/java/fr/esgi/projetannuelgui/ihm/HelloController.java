@@ -2,6 +2,8 @@ package fr.esgi.projetannuelgui.ihm;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.layout.Priority;
+import javafx.scene.layout.VBox;
 
 public class HelloController {
     @FXML
@@ -11,8 +13,9 @@ public class HelloController {
         welcomeText.setText("Welcome to JavaFX Application!");
     }
 
-//    @FXML
-//    public void initialize() {
+    @FXML
+    public void initialize() {
+        VBox.setVgrow(welcomeText, Priority.ALWAYS);
 //        notificationPane.getActions().add(new Action("Synchroniser", ae -> {
 //            MyFxControlsNotification.notification(
 //                    Pos.BASELINE_RIGHT,
@@ -23,5 +26,5 @@ public class HelloController {
 //        notificationPane.setText("Toto");
 //
 //        notificationPane.show("Recuperer les données depuis le serveur");
-//    }
+    }
 }
