@@ -4,6 +4,8 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.SpotLight;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import org.controlsfx.control.NotificationPane;
 import org.controlsfx.control.action.Action;
@@ -32,6 +34,7 @@ public class HelloApplication extends Application {
         // https://stackoverflow.com/questions/43651057/notificationpane-doesnt-show-up-in-scene
         scene = new Scene(notificationPane, scene.getWidth(), scene.getHeight());
         stage.setScene(scene);
+//        stage.setScene(new SpotLight(Color.ALICEBLUE).getScene());
         notificationPane.show("Recuperer les données depuis le serveur");
     }
 
