@@ -15,4 +15,9 @@ module fr.esgi.projetannuelgui {
     exports fr.esgi.projetannuelgui;
     exports fr.esgi.projetannuelgui.ihm;
     opens fr.esgi.projetannuelgui.ihm to javafx.fxml;
+
+    requires com.google.gson;
+    opens fr.esgi.projetannuelgui.bo to com.google.gson;
+
+    exports fr.esgi.projetannuelgui.bo;
 }
