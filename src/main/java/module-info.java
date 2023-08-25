@@ -19,5 +19,8 @@ module fr.esgi.projetannuelgui {
     requires com.google.gson;
     opens fr.esgi.projetannuelgui.bo to com.google.gson;
 
+//    requires java.base;
+//    opens java.time to com.google.gson;
+
     exports fr.esgi.projetannuelgui.bo;
 }

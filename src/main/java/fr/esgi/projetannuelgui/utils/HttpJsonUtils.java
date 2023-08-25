@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
+import java.time.LocalDateTime;
 
 public class HttpJsonUtils {
     
@@ -56,5 +57,15 @@ public class HttpJsonUtils {
         if(date == null) return "unset";
 
         return date.toString();
+    }
+    public static String stringOrNullFromDate(LocalDateTime date) {
+        if(date == null) return "unset";
+
+        return date.toString();
+    }
+    public static String stringOrNullFromDate(String date) {
+        if(date == null) return "unset";
+
+        return date;
     }
 }

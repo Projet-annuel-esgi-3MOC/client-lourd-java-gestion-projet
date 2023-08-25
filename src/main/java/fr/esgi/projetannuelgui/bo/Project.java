@@ -1,11 +1,13 @@
 package fr.esgi.projetannuelgui.bo;
 
+import java.time.LocalDateTime;
+
 public class Project {
     String name;
-    Integer startDate;
-    Integer endDate;
+    String startDate;
+    String endDate;
 
-    public Project(String name, Integer startDate, Integer endDate) {
+    public Project(String name, String startDate, String endDate) {
         this.name = name;
         this.startDate = startDate;
         this.endDate = endDate;
@@ -19,19 +21,19 @@ public class Project {
         this.name = name;
     }
 
-    public Integer getStartDate() {
+    public String getStartDate() {
         return startDate;
     }
 
-    public void setStartDate(Integer startDate) {
+    public void setStartDate(String startDate) {
         this.startDate = startDate;
     }
 
-    public Integer getEndDate() {
+    public String getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(Integer endDate) {
+    public void setEndDate(String endDate) {
         this.endDate = endDate;
     }
 
