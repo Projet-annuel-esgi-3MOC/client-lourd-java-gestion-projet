@@ -34,7 +34,7 @@ public class HelloApplication extends Application {
                     "Recupération des projets sur firebase", null, false
             );
 
-            String json = HttpJsonUtils.getStringFromrl("https://intermediaire-node.onrender.com/projects/");
+            String json = HttpJsonUtils.getStringFromrl("https://intermediaire-node.onrender.com/project_management/projects/");
             System.out.println(json);
             Gson gson = new Gson();
             Project[] projects = gson.fromJson(json, Project[].class);
